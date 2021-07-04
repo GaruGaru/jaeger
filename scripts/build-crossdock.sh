@@ -10,7 +10,7 @@ make build-and-run-crossdock
 # Only push images to dockerhub/quay.io for master branch
 if [[ "$BRANCH" == "master" ]]; then
   echo 'upload images to dockerhub/quay.io'
-  REPO=jaegertracing/test-driver
+  REPO=garugaru/test-driver
   IMAGE_TAGS=$(bash scripts/compute-tags.sh $REPO)
   IMAGE_TAGS="${IMAGE_TAGS} --tag docker.io/${REPO}:${COMMIT}"
   bash scripts/docker-login.sh

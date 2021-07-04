@@ -7,7 +7,7 @@ docker_file_arg="Dockerfile"
 target_arg=""
 local_test_only='N'
 platforms="linux/amd64"
-name_space="jaegertracing"
+name_space="garugaru"
 
 while getopts "lbc:d:f:p:t:" opt; do
 	case "${opt}" in
